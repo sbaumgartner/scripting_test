@@ -65,7 +65,7 @@ You have **1 hour** to complete this assignment.
 
 ---
 
-## 💭 Reflection Questions (Answer in `README.md`)
+## 💭 Reflection Questions (Add you answer into your `README.md`)
 
 * What steps did you prioritize first? Why?
 * What was critical to complete in the 1 hour?
