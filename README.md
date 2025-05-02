@@ -12,7 +12,7 @@ This should demonstrate your ability to:
 * Extract and export structured data
 
 You have **1 hour** to complete this assignment.
-You can use any tool(s) you want to complete this assignment.
+You can use any tool(s) or AI you want to complete this assignment.
 
 ---
 
