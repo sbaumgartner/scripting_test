@@ -52,7 +52,7 @@ You can use any tool(s) or AI you want to complete this assignment.
 
 1. **Fork this repository**
 2. Complete your implementation and commit your changes
-3. Email me the link to your GitHub repo once you're done
+3. Send us your name and a link to your GitHub repo once you're done to careers@lamarhealth.com
 
 ---
 
