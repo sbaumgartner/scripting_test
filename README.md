@@ -11,7 +11,7 @@ This should demonstrate your ability to:
 * Handle validation errors
 * Extract and export structured data
   
-This means that the assignment should take about an hour to complete. You're free to take longer if you prefer, but one hour is the expected duration. You can begin working on it at any time that suits you.
+We expect you to spend one hour on this assignment. You're free to spend more time if you’d like. You can start whenever you're ready and do not need to start this today.
 You can use any tool(s) or AI you want to complete this assignment.
 
 ---
