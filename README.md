@@ -10,8 +10,8 @@ This should demonstrate your ability to:
 * Automate form submissions
 * Handle validation errors
 * Extract and export structured data
-
-Please spend only an hour to complete this assignment.  You can start whenever you want.
+  
+This means that the assignment should take about an hour to complete. You're free to take longer if you prefer, but one hour is the expected duration. You can begin working on it at any time that suits you.
 You can use any tool(s) or AI you want to complete this assignment.
 
 ---
