@@ -11,7 +11,7 @@ This should demonstrate your ability to:
 * Handle validation errors
 * Extract and export structured data
 
-Please spend only **1 hour** to complete this assignment.  You can start whenever you want.
+Please spend only an hour to complete this assignment.  You can start whenever you want.
 You can use any tool(s) or AI you want to complete this assignment.
 
 ---
