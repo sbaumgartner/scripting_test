@@ -73,6 +73,10 @@ You can use any tool(s) or AI you want to complete this assignment.
 ## 💭 Reflection Questions (Add you answer into your `README.md`)
 
 * What steps did you prioritize first? Why?
+  * Because I had not used Python much in a while, my first steps were getting my development environment set up properly, and getting my first login test working.  Luckily, with Cursor, this only took me about 15 minutes.
 * How long did you actually spend on the project?
+  * Probably between 3 and 4 hours.  The longest stretch was getting Prefect to work, and determining what to do with my failing test case (checking out with no items in cart results in a "success").
 * How did you know your automation was working?
+  * Being able to watch chrome run through the steps (by adding additional delays initially) was very helpful for determining what was going right and wrong in the earlier portion of the project.  After I trusted the implementation a bit more, it was simple to audit the console and logs after a run to make sure things went smoothly. 
 * What would you improve with more time?
+  * I liked the pattern I had going with the JSON files being used to run the actual tests.  I could see an implementation of this with different test suites in these JSON files for different uses.  For example, a smoke test of some kind being run on a production system on some kind of schedule, a more robust test set that developers can run locally, and some middle ground that could be incorporated into a CI/CD process to verify different builds/environments.
