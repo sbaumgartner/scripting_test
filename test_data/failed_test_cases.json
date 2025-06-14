@@ -1,0 +1,23 @@
+{
+    "test_cases": [
+        {
+            "name": "checkout_without_items",
+            "username": "standard_user",
+            "password": "secret_sauce",
+            "items": [],
+            "expected_result": "error",
+            "expected_error_message": "Your cart is empty",
+            "failure_reason": "The application allows checkout with an empty cart, which is a bug. The system should prevent users from proceeding to checkout when the cart is empty.",
+            "severity": "high",
+            "reproduction_steps": [
+                "Login as standard_user",
+                "Navigate to cart page",
+                "Attempt to checkout without adding any items"
+            ],
+            "expected_behavior": "The system should prevent checkout and display an error message indicating the cart is empty",
+            "actual_behavior": "The system allows checkout to proceed without items",
+            "impact": "Users can complete orders without any items, which could lead to empty orders in the system",
+            "status": "known_issue"
+        }
+    ]
+} 

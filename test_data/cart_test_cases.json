@@ -1,0 +1,77 @@
+{
+    "test_cases": [
+        {
+            "name": "single_item_checkout",
+            "username": "standard_user",
+            "password": "secret_sauce",
+            "items": [
+                {
+                    "name": "Sauce Labs Backpack",
+                    "expected_price": 29.99
+                }
+            ],
+            "expected_result": "success",
+            "additional_validations": {
+                "verify_cart_count": true,
+                "verify_total_price": true,
+                "verify_checkout_complete": true
+            }
+        },
+        {
+            "name": "multiple_items_checkout",
+            "username": "standard_user",
+            "password": "secret_sauce",
+            "items": [
+                {
+                    "name": "Sauce Labs Backpack",
+                    "expected_price": 29.99
+                },
+                {
+                    "name": "Sauce Labs Bike Light",
+                    "expected_price": 9.99
+                },
+                {
+                    "name": "Sauce Labs Bolt T-Shirt",
+                    "expected_price": 15.99
+                }
+            ],
+            "expected_result": "success",
+            "additional_validations": {
+                "verify_cart_count": true,
+                "verify_total_price": true,
+                "verify_checkout_complete": true
+            }
+        },
+        {
+            "name": "checkout_with_invalid_info",
+            "username": "standard_user",
+            "password": "secret_sauce",
+            "items": [
+                {
+                    "name": "Sauce Labs Backpack",
+                    "expected_price": 29.99
+                }
+            ],
+            "checkout_info": {
+                "first_name": "",
+                "last_name": "",
+                "postal_code": ""
+            },
+            "expected_result": "error",
+            "expected_error_message": "Error: First Name is required"
+        },
+        {
+            "name": "checkout_with_problem_user",
+            "username": "problem_user",
+            "password": "secret_sauce",
+            "items": [
+                {
+                    "name": "Sauce Labs Backpack",
+                    "expected_price": 29.99
+                }
+            ],
+            "expected_result": "error",
+            "expected_error_message": "Error: Last Name is required"
+        }
+    ]
+} 

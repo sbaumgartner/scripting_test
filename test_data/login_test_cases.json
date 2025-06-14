@@ -1,0 +1,112 @@
+{
+    "test_cases": [
+        {
+            "name": "valid_standard_user",
+            "username": "standard_user",
+            "password": "secret_sauce",
+            "expected_result": "success",
+            "expected_url_contains": "/inventory.html",
+            "max_response_time_ms": 4000,
+            "additional_validations": {
+                "check_inventory_count": true,
+                "check_cart_empty": true,
+                "check_menu_visible": true
+            }
+        },
+        {
+            "name": "valid_problem_user",
+            "username": "problem_user",
+            "password": "secret_sauce",
+            "expected_result": "success",
+            "expected_url_contains": "/inventory.html",
+            "max_response_time_ms": 4000,
+            "additional_validations": {
+                "check_inventory_count": true,
+                "check_cart_empty": true,
+                "check_menu_visible": true
+            }
+        },
+        {
+            "name": "valid_performance_glitch_user",
+            "username": "performance_glitch_user",
+            "password": "secret_sauce",
+            "expected_result": "success",
+            "expected_url_contains": "/inventory.html",
+            "max_response_time_ms": 6000,
+            "additional_validations": {
+                "check_inventory_count": true,
+                "check_cart_empty": true,
+                "check_menu_visible": true
+            }
+        },
+        {
+            "name": "valid_error_user",
+            "username": "error_user",
+            "password": "secret_sauce",
+            "expected_result": "success",
+            "expected_url_contains": "/inventory.html",
+            "max_response_time_ms": 4000,
+            "additional_validations": {
+                "check_inventory_count": true,
+                "check_cart_empty": true,
+                "check_menu_visible": true
+            }
+        },
+        {
+            "name": "valid_visual_user",
+            "username": "visual_user",
+            "password": "secret_sauce",
+            "expected_result": "success",
+            "expected_url_contains": "/inventory.html",
+            "max_response_time_ms": 4000,
+            "additional_validations": {
+                "check_inventory_count": true,
+                "check_cart_empty": true,
+                "check_menu_visible": true
+            }
+        },
+        {
+            "name": "failing_test_case",
+            "username": "standard_user",
+            "password": "secret_sauce",
+            "expected_result": "success",
+            "expected_url_contains": "/inventory.html",
+            "max_response_time_ms": 4000,
+            "additional_validations": {
+                "check_inventory_count": true,
+                "check_cart_empty": true,
+                "check_menu_visible": true,
+                "check_nonexistent_element": true
+            }
+        },
+        {
+            "name": "locked_out_user",
+            "username": "locked_out_user",
+            "password": "secret_sauce",
+            "max_response_time_ms": 4000,
+            "expected_result": "error",
+            "expected_error_message": "Epic sadface: Sorry, this user has been locked out."
+        },
+        {
+            "name": "invalid_credentials",
+            "username": "invalid_user",
+            "password": "invalid_password",
+            "expected_result": "error",
+            "expected_error_message": "Epic sadface: Username and password do not match any user in this service"
+        },
+        {
+            "name": "empty_username",
+            "username": "",
+            "password": "secret_sauce",
+            "expected_result": "error",
+            "expected_error_message": "Epic sadface: Username is required"
+        },
+        {
+            "name": "empty_password",
+            "username": "standard_user",
+            "password": "",
+            "expected_result": "error",
+            "expected_error_message": "Epic sadface: Password is required"
+        }
+    ]
+} 
