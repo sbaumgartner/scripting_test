@@ -76,6 +76,7 @@ You can use any tool(s) or AI you want to complete this assignment.
   * Because I had not used Python much in a while, my first steps were getting my development environment set up properly, and getting my first login test working.  Luckily, with Cursor, this only took me about 15 minutes.
 * How long did you actually spend on the project?
   * Probably between 3 and 4 hours.  The longest stretch was getting Prefect to work, and determining what to do with my failing test case (checking out with no items in cart results in a "success").
+  * (After originally writing this, I promptly spent another hour troubleshooting some logging issues that I noticed right before I was about to turn this in).
 * How did you know your automation was working?
   * Being able to watch chrome run through the steps (by adding additional delays initially) was very helpful for determining what was going right and wrong in the earlier portion of the project.  After I trusted the implementation a bit more, it was simple to audit the console and logs after a run to make sure things went smoothly. 
 * What would you improve with more time?
