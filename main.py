@@ -16,8 +16,8 @@ def setup_logging():
         os.makedirs('logs')
     
     # Create screenshots directory if it doesn't exist
-    if not os.path.exists('screenshots'):
-        os.makedirs('screenshots')
+    if not os.path.exists('automation_screenshots'):
+        os.makedirs('automation_screenshots')
     
     # Clear validation errors log at start of test run
     with open('logs/validation_errors.log', 'w') as f:
@@ -32,8 +32,7 @@ def setup_logging():
     console_formatter = logging.Formatter('%(levelname)s - %(message)s')
     
     # Create handlers
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    file_handler = logging.FileHandler(f'logs/test_run_{timestamp}.log')
+    file_handler = logging.FileHandler('logs/automation.log')
     file_handler.setFormatter(file_formatter)
     
     console_handler = logging.StreamHandler()

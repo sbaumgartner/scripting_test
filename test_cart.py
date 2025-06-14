@@ -24,11 +24,10 @@ def log_form_validation_error(test_case_name, error_message):
     with open('logs/validation_errors.log', 'a') as f:
         f.write(log_entry)
 
-def capture_failure_screenshot(page, test_case_name):
+def capture_failure_screenshot(page, test_name):
     """Capture screenshot on test failure"""
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    os.makedirs('screenshots', exist_ok=True)
-    screenshot_path = f'screenshots/failure_{test_case_name}_{timestamp}.png'
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    screenshot_path = f'automation_screenshots/failure_{test_name}_{timestamp}.png'
     page.screenshot(path=screenshot_path)
     logging.info(f"Screenshot captured: {screenshot_path}")
 

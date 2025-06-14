@@ -24,7 +24,7 @@ wheels/
 *.log
 *.sqlite
 logs/
-screenshots/
+automation_screenshots/
 
 # Environment
 .env

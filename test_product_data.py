@@ -7,7 +7,7 @@ from datetime import datetime
 def capture_failure_screenshot(page, test_name):
     """Capture screenshot on test failure"""
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    screenshot_path = f'screenshots/failure_{test_name}_{timestamp}.png'
+    screenshot_path = f'automation_screenshots/failure_{test_name}_{timestamp}.png'
     page.screenshot(path=screenshot_path)
     logging.info(f"Screenshot captured: {screenshot_path}")
 
